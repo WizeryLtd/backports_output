@@ -135,6 +135,7 @@ config BACKPORT_MII
 	bool
 
 config BACKPORT_BUILD_DMA_SHARED_BUFFER
+	depends on n
 	bool
 	depends on ANON_INODES
 	depends on !BACKPORT_KERNEL_3_0
